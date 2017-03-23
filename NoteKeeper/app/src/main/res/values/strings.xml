@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NoteKeeper</string>
+    <string name="show_all">Show All</string>
+    <string name="show_completed">Show Completed</string>
+    <string name="show_pending">Show Pending</string>
+    <string name="sort_by_time">Sort by Time</string>
+    <string name="sort_by_priority">Sort by Priority</string>
+    <string name="add_button_label">Add</string>
+    <string-array name="priority_values">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+</resources>
