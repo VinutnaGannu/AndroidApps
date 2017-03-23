@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Games DB</string>
+    <string name="searchbtn">Search</string>
+    <string name="gobtn">GO</string>
+    <string name="label">Overview:</string>
+    <string name="genrelabel">Genre:</string>
+    <string name="pubdisplay">Publisher:</string>
+    <string name="trailerbtn">Play Trailer</string>
+    <string name="similarbtn">Similar Games</string>
+    <string name="finishbtn">Finish</string>
+</resources>

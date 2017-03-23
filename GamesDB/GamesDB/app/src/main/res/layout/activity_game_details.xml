@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.myapp.lata.gamesdb.GameDetails">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titledisplay"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/titledisplay"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/overviewdisplay"
+        android:scrollbars="vertical"
+        android:maxLines="5"/>
+
+    <Button
+        android:text="@string/trailerbtn"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:id="@+id/trailerbtn"
+        android:textAllCaps="false"
+        android:layout_below="@+id/publisherdisplay"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:text="@string/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/label"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genredisplay"
+        android:layout_alignBaseline="@+id/genrelabel"
+        android:layout_alignBottom="@+id/genrelabel"
+        android:layout_toRightOf="@+id/label"
+        android:layout_toEndOf="@+id/label"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/publisherdisplay"
+        android:layout_alignBaseline="@+id/publisherlabel"
+        android:layout_alignBottom="@+id/publisherlabel"
+        android:layout_alignLeft="@+id/genredisplay"
+        android:layout_alignStart="@+id/genredisplay" />
+
+    <TextView
+        android:text="@string/genrelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genrelabel"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/overviewdisplay" />
+
+    <TextView
+        android:text="@string/pubdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/publisherlabel"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/genrelabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/similarbtn"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:id="@+id/similarbtn"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/trailerbtn"
+        android:layout_alignLeft="@+id/trailerbtn"
+        android:layout_alignStart="@+id/trailerbtn" />
+
+    <Button
+        android:text="@string/finishbtn"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:id="@+id/finishbtn"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/similarbtn"
+        android:layout_alignLeft="@+id/similarbtn"
+        android:layout_alignStart="@+id/similarbtn" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:id="@+id/progressBar" />
+</RelativeLayout>
