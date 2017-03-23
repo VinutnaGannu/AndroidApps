@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GetNewsXML</string>
+    <string name="Get_news_label">Get News</string>
+    <string name="finish_button_label">Finish</string>
+</resources>
