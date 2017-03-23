@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vinutna.podcasts.PlayActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/playActivityTitle" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_below="@+id/playActivityTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/playActivityIcon" />
+
+    <SeekBar
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/playActivitySeek"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/durationLabel"
+        android:layout_alignStart="@+id/durationLabel" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_play_arrow_black_24dp"
+        android:id="@+id/playActivityButton"
+        android:layout_above="@+id/playActivitySeek"
+        android:layout_alignLeft="@+id/playActivityTitle"
+        android:layout_alignStart="@+id/playActivityTitle"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:text="@string/Duration_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/durationLabel"
+        android:layout_above="@+id/playActivityButton"
+        android:layout_alignLeft="@+id/publishedLable"
+        android:layout_alignStart="@+id/publishedLable"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/desc"
+        android:layout_below="@+id/playActivityIcon"
+        android:layout_alignLeft="@+id/playActivityIcon"
+        android:layout_alignStart="@+id/playActivityIcon"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:text="@string/Published_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/publishedLable"
+        android:layout_alignBottom="@+id/durationLabel"
+        android:layout_alignLeft="@+id/desc"
+        android:layout_alignStart="@+id/desc"
+        android:layout_marginBottom="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/publishedLable"
+        android:layout_toRightOf="@+id/publishedLable"
+        android:layout_toEndOf="@+id/publishedLable"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:id="@+id/published" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/duration"
+        android:layout_alignBaseline="@+id/durationLabel"
+        android:layout_alignBottom="@+id/durationLabel"
+        android:layout_toRightOf="@+id/durationLabel"
+        android:layout_toEndOf="@+id/durationLabel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+</RelativeLayout>
